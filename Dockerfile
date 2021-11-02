@@ -1,7 +1,7 @@
 FROM python:3
 
 RUN apt update && \
-    apt add \
+    apt install \
       build-base \
       postgresql \
       postgresql-dev \
