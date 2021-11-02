@@ -1,10 +1,6 @@
 FROM python:3
 
-RUN apt update && \
-    apt install \
-      build-essentiale \
-      postgresql \
-      libpq-dev
+RUN apt update
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
