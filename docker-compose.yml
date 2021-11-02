@@ -3,6 +3,7 @@ version: '3'
 services:
   web:
     build: .
+    command: flask run
     depends_on:
       - postgres
     volumes:
