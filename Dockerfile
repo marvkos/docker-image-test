@@ -1,11 +1,11 @@
 FROM python:3
 
-RUN apk update \
-  && apk add \
-    build-base \
-    postgresql \
-    postgresql-dev \
-    libpq
+RUN apt update && \
+    apt add \
+      build-base \
+      postgresql \
+      postgresql-dev \
+      libpq
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
