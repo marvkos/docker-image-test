@@ -1,6 +1,7 @@
 FROM python:3
 
 RUN apt update
+RUN apt install net-tools
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
